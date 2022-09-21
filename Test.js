@@ -17,12 +17,22 @@ app.get("/", function(req, res){
     res.end;
 });
 
-app.get("/login", function(req, res){
-    res.send("GET: Login Page");
-});
+// app.get("/login", function(req, res){
+//     res.send("GET: Login Page");
+// });
 
-app.post("/login", function(req, res){
-    res.send("POST: Login Page");
+// app.post("/login", function(req, res){
+//     res.send("POST: Login Page");
+// });
+
+app.route("/login")
+.get(function (req,res){
+    res.send("Login Page (GET)");
+    res.end;
+})
+.post(function (req,res){
+    res.send("Login Page (POST)")
+    res.end;
 });
 
 //http:localhost:8080
