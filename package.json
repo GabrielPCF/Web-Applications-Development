@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GabrielPCF/Web-Applications-Development#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "connect": "^3.7.0",
     "express": "^4.18.1",
     "https": "^1.0.0"
